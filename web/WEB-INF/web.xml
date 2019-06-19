@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>GirisYap</servlet-name>
+        <servlet-class>servlet.GirisYap</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>cikis</servlet-name>
+        <servlet-class>servlet.cikis</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>KayitOl</servlet-name>
+        <servlet-class>servlet.KayitOl</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SeansEkle</servlet-name>
+        <servlet-class>servlet.SeansEkle</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GirisYap</servlet-name>
+        <url-pattern>/GirisYap</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>cikis</servlet-name>
+        <url-pattern>/cikis</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>KayitOl</servlet-name>
+        <url-pattern>/KayitOl</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SeansEkle</servlet-name>
+        <url-pattern>/SeansEkle</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

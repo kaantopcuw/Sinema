@@ -1,0 +1,44 @@
+CREATE DATABASE cinema;
+
+USE cinema;
+
+CREATE TABLE IF NOT EXISTS users (
+user_id INT AUTO_INCREMENT,
+isim VARCHAR(100) NOT NULL,
+soyad VARCHAR(100) NOT NULL,
+telno VARCHAR(100) NOT NULL,
+username VARCHAR(10) NOT NULL,
+password VARCHAR(10) NOT NULL,
+yetki INT NOT NULL,
+PRIMARY KEY (user_id)
+);
+
+CREATE TABLE IF NOT EXISTS salonlar (
+salon_id INT AUTO_INCREMENT,
+isim VARCHAR(100) NOT NULL,
+koltuk_sira INT NOT NULL,
+siradaki_koltuk INT NOT NULL,
+aciklama TEXT,
+PRIMARY KEY (salon_id)
+);
+
+CREATE TABLE IF NOT EXISTS filmler (
+film_id INT AUTO_INCREMENT,
+isim VARCHAR(200) NOT NULL,
+imbd_puani DECIMAL NOT NULL,
+aciklama TEXT,
+PRIMARY KEY (film_id)
+);
+
+CREATE TABLE IF NOT EXISTS seanslar (
+seans_id INT AUTO_INCREMENT,
+salon_id INT NOT NULL,
+film_id INT NOT NULL,
+tarih TEXT NOT NULL,
+saat TEXT NOT NULL,
+koltuk_durumu TEXT NOT NULL,
+aciklama TEXT,
+PRIMARY KEY (seans_id),
+FOREIGN KEY fk_salon(salon_id) REFERENCES salonlar(salon_id),
+FOREIGN KEY fk_film(film_id) REFERENCES filmler(film_id)
+);
