@@ -19,19 +19,19 @@ Proje Java programlama dilinde hazırlandı. Apache Tomcat sunucusunda test edil
 <br><br>
 Not: Database mysql_database klasöründe mevcuttur. 1 günde hazırlanmış bir projedir eksiklikleri ve güvenlikle ilgili konularda geliştirilmesini isterseniz mail atabilirsiniz.
 
-<h4>Root Paneli</h4>
+<h3>Root Paneli</h3>
 
 ![RootPanel](/root_panel.png)
 
-<h4>Kullanıcı Paneli</h4>
+<h3>Kullanıcı Paneli</h3>
 
 ![KuulaniciPanel](/kullanici_panel.png)
 
-<h4>Üye Ol</h4>
+<h3>Üye Ol</h3>
 
 ![UyeOl](/uye_ol.png)
 
-<h4>Rezervasyon</h4>
+<h3>Rezervasyon</h3>
 
 ![Rezervasyon](/rezervasyon.png)
 
